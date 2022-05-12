@@ -521,8 +521,9 @@
                 from, to;
 
 
-            div.innerHTML = '<FONT SIZE=2 style = "font-family:verdana"><b>Índice de Dependência de Total <br>(%)<span>  <span class="brsmall"></span> '; // Títulos da legenda
-            for (var i = 0; i < grades.length; i++) {
+            div.innerHTML = '<FONT SIZE=2 style = "font-family:verdana"><b>%<span>  <span class="brsmall"></span> '; // Títulos da legenda
+            
+		for (var i = 0; i < grades.length; i++) {
                 div.innerHTML +=
                     '<i style="background:' + getColor(grades[i] + 1) + '"></i>' +
                     labels[i] + (grades[i + 1] ? '  '
